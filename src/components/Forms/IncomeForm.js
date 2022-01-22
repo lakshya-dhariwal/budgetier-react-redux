@@ -1,10 +1,14 @@
 import React from "react";
 
 function IncomeForm() {
+  const formHandler = (e) => {
+    console.log(e.target.value);
+  };
   return (
     <form
       action="expense"
       className=" bg-orange-300 rounded text-slate-50 h-fit p-4 m-3 "
+      onSubmit={formHandler}
     >
       <div className="flex items-center justify-between text-center">
         <label className="text-indigo-800 px-3 m-2" htmlFor="amount">
@@ -43,7 +47,7 @@ function IncomeForm() {
         </select>
       </div>
       <div className="flex items-center justify-between text-center">
-        <label className="text-indigo-800 px-3 m-2" for="Month and Year">
+        <label className="text-indigo-800 px-3 m-2" htmlFor="Month and Year">
           Month and Year
         </label>
         <input

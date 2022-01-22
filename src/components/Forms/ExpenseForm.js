@@ -1,10 +1,15 @@
 import React from "react";
 
 function ExpenseForm() {
+  const formHandler = (e) => {
+    e.preventDefault();
+    console.log(e.currentTarget.elements[3].value);
+  };
   return (
     <form
       action="expense"
       className=" bg-orange-300 rounded text-slate-50 h-fit p-4 m-3 "
+      onSubmit={formHandler}
     >
       <div className="flex items-center justify-between text-center">
         <label className="text-indigo-800 px-3 m-2" htmlFor="amount">
