@@ -1,6 +1,7 @@
 import Nav from "./components/Nav.js";
 import Expenses from "./components/Expenses.js";
 import Income from "./components/Income.js";
+import Dashboard from "./components/Dashboard.js";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
           </Route>
           <Route path="/income">
             <Income />
+          </Route>
+          <Route path="/">
+            <Dashboard />
           </Route>
         </Switch>
       </BrowserRouter>
