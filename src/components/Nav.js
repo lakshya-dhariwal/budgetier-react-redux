@@ -7,7 +7,7 @@ function Nav() {
         <div className="text-bold text-3xl text-center p-2 text-yellow-400 font-medium flex justify-center m-1">
           <img src="logo.svg" alt="logo" width={35} />
           <h1>
-            Budget<span className="text-slate-100">tier</span>
+            Budget<span className="text-light-blue">tier</span>
           </h1>
         </div>
       </Link>
