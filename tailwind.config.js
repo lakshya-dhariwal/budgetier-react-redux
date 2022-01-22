@@ -5,7 +5,7 @@ module.exports = {
       colors: {
         "nav-blue": "#2A5578",
         "custom-red": "#EE825F",
-        "custom-purple": "#6765ED",
+        "custom-purple": "#5865F2",
       },
     },
   },
