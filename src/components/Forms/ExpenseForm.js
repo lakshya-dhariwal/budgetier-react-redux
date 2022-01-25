@@ -8,7 +8,7 @@ function ExpenseForm() {
   return (
     <form
       action="expense"
-      className=" bg-orange-300 rounded text-slate-50 h-fit p-4 m-3 "
+      className="bg-orange-300 rounded text-slate-50 h-fit p-4 m-3 "
       onSubmit={formHandler}
     >
       <div className="flex items-center justify-between text-center">
